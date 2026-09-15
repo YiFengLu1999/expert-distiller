@@ -1,0 +1,11 @@
+# User source material and generated experts stay local by default.
+materials/
+generated/
+dist/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
