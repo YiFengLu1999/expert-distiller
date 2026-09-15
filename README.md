@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="skills/expert-distiller/assets/logo.png" width="112" height="112" alt="专家蒸馏 Logo：书页汇聚成一滴知识" />
+</p>
+
 # Expert Distiller · 专家蒸馏
 
 [简体中文](README.md) | [English](README.en.md)

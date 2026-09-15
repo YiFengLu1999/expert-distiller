@@ -1,5 +1,7 @@
 # 配图制作记录 / Visual assets
 
+技能 Logo 的设计说明与最终提示词见 [Logo design](logo-design.md)。
+
 以下配图使用内置 ImageGen 生成，供中英文 README 共用。它们是概念插图，不是产品界面截图或行为评测结果。
 
 The images below were generated with the built-in ImageGen tool for both README versions. They are concept illustrations, not product screenshots or behavioral evaluation results.
