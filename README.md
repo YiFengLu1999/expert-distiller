@@ -1,5 +1,7 @@
 # Expert Distiller · 专家蒸馏
 
+[简体中文](README.md) | [English](README.en.md)
+
 **把你提供的书籍和材料，变成一个能依据材料判断、解释和与你对话的专家 Skill。**
 
 ```text
