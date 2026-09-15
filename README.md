@@ -2,23 +2,15 @@
 
 [简体中文](README.md) | [English](README.en.md)
 
-**把你提供的书籍和材料，变成一个能依据材料判断、解释和与你对话的专家 Skill。**
+![专家蒸馏：将用户材料提炼为专家技能，再进行有出处的对话](docs/images/overview.png)
 
-```text
-书籍 / 文章 / 讲义 / 笔记
-           ↓
-可定位的材料片段 + 覆盖范围
-           ↓
-概念 → 判断条件 → 诊断问题 → 行动 → 例外
-           ↓
-可安装的领域专家 SKILL.md + 证据库
-           ↓
-带出处的专家对话
-```
+**把你提供的书籍和材料，变成一个能依据材料判断、解释和与你对话的专家 Skill。**
 
 这是由聊天模型执行的技能工作流，附带本地 Python 工具。不是模型权重训练，也不声称能复制真实专家。蒸馏和对话使用你运行 Skill 的模型，不需要本项目的独立 API Key；效果取决于模型、材料质量与评测。
 
 ## 两层技能
+
+![四步流程：读取材料、提炼判断方法、生成技能包、安装并对话；出处随技能保留](docs/images/workflow.png)
 
 | 层 | 作用 |
 |---|---|
@@ -70,6 +62,10 @@ python3 scripts/install.py generated/research-methods-expert
 
 ## 立即体验原创样例
 
+![专家回答区分材料依据、基于材料推导和材料不足](docs/images/evidence-v2.png)
+
+*回答方式示意，基于下方原创样例；不是实际对话截图。*
+
 ```bash
 python3 scripts/install.py examples/workshop-expert
 ```
@@ -116,3 +112,5 @@ PDF 可选依赖：`python3 -m pip install pypdf`。扫描件需要额外 OCR；
 - `materials/`、`generated/` 默认 Git 忽略。它们可能包含整本文本和私密材料；发布前仍需检查暂存文件，`.gitignore` 不是访问控制。
 
 项目代码、技能指令与原创样例采用 MIT 许可；用户书籍和其他第三方材料的权利不因此改变。
+
+配图采用中英双语标签；生成方式与完整提示词见 [配图制作记录](docs/visual-assets.md)。

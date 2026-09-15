@@ -2,23 +2,15 @@
 
 [简体中文](README.md) | [English](README.en.md)
 
-**Turn the books and materials you provide into an expert skill that uses those sources to reason, explain, and discuss questions with you.**
+![Expert Distiller turns your materials into an expert skill and conversations with source references](docs/images/overview.png)
 
-```text
-Books / articles / lecture notes / personal notes
-                       ↓
-Traceable source passages + reading coverage
-                       ↓
-Concepts → decision criteria → diagnostic questions → actions → exceptions
-                       ↓
-Installable domain expert SKILL.md + evidence corpus
-                       ↓
-Expert conversations with source references
-```
+**Turn the books and materials you provide into an expert skill that uses those sources to reason, explain, and discuss questions with you.**
 
 This is a skill workflow executed by a chat model, supported by local Python tools. It does not train model weights or claim to replicate a real expert. Distillation and conversations use the model in your skill host; this project requires no separate API key. Results depend on the model, source quality, and evaluation.
 
 ## Two layers of skills
+
+![Four steps: read sources, extract decision methods, build the skill, and install and chat; sources stay with the skill](docs/images/workflow.png)
 
 | Layer | Purpose |
 |---|---|
@@ -72,6 +64,10 @@ with references to the provided materials.
 
 ## Try the original example
 
+![Expert answers distinguish source-supported statements, inferences from sources, and insufficient evidence](docs/images/evidence-v2.png)
+
+*Illustrative answer patterns based on the original example below, not an actual conversation screenshot.*
+
 ```bash
 python3 scripts/install.py examples/workshop-expert
 ```
@@ -122,3 +118,5 @@ Inspired by [Daniel Miessler's Fabric](https://github.com/danielmiessler/Fabric)
 - `materials/` and `generated/` are ignored by Git by default. They may contain full texts and private materials. Review staged files before publishing; `.gitignore` is not access control.
 
 The project code, skill instructions, and original examples are licensed under MIT. This does not change the rights associated with user-provided books or other third-party materials.
+
+The illustrations use bilingual labels. See [visual asset notes](docs/visual-assets.md) for the generation method and full prompts.
