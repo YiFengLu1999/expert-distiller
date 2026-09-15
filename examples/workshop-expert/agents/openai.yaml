@@ -1,0 +1,4 @@
+interface:
+  display_name: "工作坊设计专家 · 演示"
+  short_description: "基于原创短材料演示带有证据、条件和适用边界的专家对话技能"
+  default_prompt: "使用 $workshop-expert，帮我判断工作坊活动是否匹配学习目标，并给出材料依据。"
